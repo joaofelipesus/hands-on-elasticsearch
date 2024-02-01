@@ -14,3 +14,21 @@ PUT megacorp/employee/1
   "interests": ["sports", "music"]
 }
 ```
+
+## Search for a document
+
+Search candidate by id
+
+```JSON
+GET megacorp/employee/1
+```
+
+## Find if a document exists
+
+Using `HEAD` HTTP verb if requested document exists, it will return only `200 OK` without document
+conten, otherwise `404 Not Found` will be returned.
+
+```JSON
+HEAD megacorp/employee/1
+```
+
